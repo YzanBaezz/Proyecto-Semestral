@@ -1,3 +1,10 @@
 body{
-    background-color: rgba(202, 200, 195, 0.808);
+    background-color: white;
+    font-family: sans-serif;
 }
+.navbar-nav{
+    display: flex;
+    
+
+}
+
