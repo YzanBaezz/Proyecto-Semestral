@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+h1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    
+
+.fondoletrasmenu{
+    color: #fff !important;
+}
+
+.fondomenu{
+    background-color: #000 !important;
+}
