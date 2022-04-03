@@ -11,7 +11,7 @@
 
 .carousel-item p{
     font-size: 4rem;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.893);
     position: absolute;
     top: 10%;
     left:10%;
@@ -23,7 +23,7 @@
 }
 .carousel-item h2{
     font-size: 2rem;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.893);
     position: absolute;
     top: 25%;
     left: 10%;
@@ -42,3 +42,56 @@ body{
     font-size:larger;
     
 }
+
+.cajabtn{
+
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.texto{
+
+    color: rgb(186, 12, 12);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:normal;
+
+}
+
+.carta1 {
+
+
+    background-color: #000;
+    color: #fff;
+    float:center;
+    margin-right: auto;
+    margin-top: 100px;
+
+}
+
+.col-xl-3 img:hover{
+    transform:  scale(1.15);
+ 
+ }
+ 
+ .col-md-4 img:hover{
+    transform:  scale(1.15);
+ 
+ }
+ 
+ .col-sm-6 img:hover{
+    transform:  scale(1.15);
+ 
+ }
+
+.carta2{
+
+    background-color: #000;
+    color: #fff;
+    float:center;
+    margin-left: auto;
+    margin-top: 100px;
+
+ }
