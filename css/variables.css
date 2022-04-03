@@ -62,7 +62,7 @@ body{
 
 .carta1 {
 
-
+    border: #000 solid;
     background-color: #000;
     color: #fff;
     float:center;
@@ -95,3 +95,9 @@ body{
     margin-top: 100px;
 
  }
+
+ .cimg{
+    height: 109px;
+    width: 100%;
+
+}
