@@ -182,3 +182,16 @@ body{
     }
     
 }
+
+#galeria .col-lg-4{
+    padding: 15px;
+    margin: 0 !important;
+}
+#galeria img{
+    width: 100%;
+}
+
+#galeria img:hover{
+    border: 5px solid #fff;
+}
+
