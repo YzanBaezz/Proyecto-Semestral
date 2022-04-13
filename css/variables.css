@@ -36,6 +36,7 @@
 body{
 
     background-color: rgba(180, 175, 175, 0.504) !important;
+    min-height: 100vh;
 }
 .container{
     font-family: Arial, Helvetica, sans-serif;
@@ -66,25 +67,26 @@ body{
     background-color: #000;
     color: #fff;
     float:center;
-    margin-right: auto;
+    margin-left:60px;
     margin-top: 70px;
+    margin-bottom: 70px;
 
 }
 
 .col-xl-3 img:hover{
     transform:  scale(1.15);
- 
+
 }
 
- .col-md-4 img:hover{
+.col-md-4 img:hover{
+    transform:  scale(1.15);
+
+}
+
+.col-sm-6 img:hover{
     transform:  scale(1.15);
  
- }
- 
- .col-sm-6 img:hover{
-    transform:  scale(1.15);
- 
- }
+}
 
 .carta2{
 
@@ -94,9 +96,9 @@ body{
     margin-left: auto;
     margin-top: 100px;
 
- }
+}
 
- .cimg{
+.cimg{
     height: 109px;
     width: 100%;
 
@@ -183,6 +185,8 @@ body{
     
 }
 
+
+
 #galeria .col-lg-4{
     padding: 15px;
     margin: 0 !important;
@@ -195,11 +199,16 @@ body{
     border: 5px solid #fff;
 }
 
+
+
+
 .body{
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+    margin-left: 50px;
 
 
 }
@@ -264,4 +273,23 @@ body{
 .card .contenido a:hover{
     background: #2fb4cc;
     color: #fff;
+}
+
+
+footer{
+    position: absolute;
+
+
+}
+
+/*-- texto responsivo --*/
+
+.texto-res{
+
+}
+
+/*-- imgs logos marcas responsivas --*/
+
+.img-res{
+
 }
