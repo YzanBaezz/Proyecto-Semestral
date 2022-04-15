@@ -66,29 +66,94 @@
         </div>
       <br>
 
-       <center><h1> Formulario</h1></center>
-      <form>
-        <center><label for="Ingresa tu rut"> Ingrese su rut:</label></center>
-        <center><input type="number" id="rut" placeholder="Rut*"></center><br>
-        <center><label >Nombres: </label><br></center>
-        <center><input type="text" placeholder="Nombres*" ></center><br>
-        <center><label >Apellidos:</label></center>
-        <center><input type="text" placeholder="Apellidos*"></center><br>
-        <center><label for="NumeroTelefonico">Numero Telefonico:</label></center>
-        <center><input type="int" placeholder="Telefono*"></center><br>
-        <center><label >Correo Electronico:</label></center>
-        <center><input type="text" placeholder="Email*" ></center><br>
-        <center><label for="Carroceria"> Carroceria:</label></center>
-        <center><input type="radio" name="Auto" value="Auto">Auto</center>
-        <center><input type="radio" name="Camioneta" value="Camioneta">Camioneta</center><br>
-        <center><label for="Tipo de Vehiculo">Tipo de Vehiculo</label></center>
-        <center><input type="radio" name="Nuevo" value="Nuevo" >Nuevo</center>
-        <center><input type="radio" name="Usado" value="Usado" >Semi-Nuevo</center><br>
-        <center><label for="Comentario"> Vehiculo deseado:</label></center>
-        <center><textarea name="Comentario" placeholder="Escriba aqui su mensaje*"></textarea></center><br>
-        <center><input type="button" value="Realizar solicitud"></center><br>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-2 hidden-sm"></div>
+            <div class="col-md-8 hidden-sm-12">
+                <form name="Formulario" method="post" action="documentoadop.html">
+                    <h1> Formulario </h1>
 
-      </form>
+                    <div class="form-group">
+                        <label for="Nombre">Nombre Completo:</label>
+                        <input name="nombre"type="text" class="form-control" id="nombre" placeholder="Nombre Completo*" name="Nombre Completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">E-mail:</label>
+                        <input name="email"type="email" class="form-control" id="correo" placeholder="E-mail*" name="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Rut">Rut:</label>
+                        <input name="Rut" type="number" class="form-control" id="rut" placeholder="Ingrese rut*" name="Rut">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Telefono">Telefono:</label>
+                        <input name="telefono"type="number" class="form-control" id="telefono" placeholder="Telefono*" name="telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Region">Region:</label>
+                        <select name="Region" id="Region">
+                          <option value selected disable value="">Seleccione....</option>
+                          <option value="I Región de Tarapacá">I Región de Tarapacá</option>
+                          <option value="II Región de Antofagasta">II Región de Antofagasta</option>
+                          <option value=" III Región de Atacama"> III Región de Atacama</option>
+                          <option value=" IV Región de Coquimbo"> IV Región de Coquimbo</option>
+                          <option value=" V Región de Valparaíso"> V Región de Valparaíso</option>
+                          <option value="VI Región del Libertador General Bernardo O’Higgins">VI Región del Libertador General Bernardo O’Higgins</option>
+                          <option value="VII Región del Maule">VII Región del Maule</option>
+                          <option value="VIII Región del Biobío">VIII Región del Biobío</option>
+                          <option value="IX Región de La Araucanía">IX Región de La Araucanía</option>
+                          <option value=" X Región de Los Lagos"> X Región de Los Lagos</option>
+                          <option value="XI Región Aysén del General Carlos Ibáñez del Campo">XI Región Aysén del General Carlos Ibáñez del Campo</option>
+                          <option value=" XII Región de Magallanes y Antártica Chilena"> XII Región de Magallanes y Antártica Chilena</option>
+                          <option value="Región Metropolitana de Santiago">Región Metropolitana de Santiago</option>
+                          <option value="XIV Región de Los Ríos">XIV Región de Los Ríos</option>
+                          <option value="XV Región de Arica y Parinacota">XV Región de Arica y Parinacota</option>
+                          <option value="XVI Región de Ñuble">XVI Región de Ñuble</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Comuna">Comuna:</label>
+                      <input name="Comuna" type="text" class="form-control" id="Comuna" placeholder="Comuna*" name="Comuna">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Patente">Patente</label>
+                      <input name="Patente" type="text" class="form-control" id="Patente" placeholder="Patente*" name="Patente">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Asunto">Asunto:</label>
+                      <select name="Asunto" id="Asunto">
+                        <option value selected disable value="">Seleccione Asunto..*</option>
+                        <option value="Falla mecánica">Falla mecánica</option>
+                        <option value="Demora entrega vehículo">Demora entrega vehículo</option>
+                        <option value="Documentación pendiente">Documentación pendiente</option>
+                        <option value="Accesorios Pendientes">Accesorios pendientes</option>
+                        <option value="Transferencia vehículo">Transferencia vehículo</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <textarea class="form-control" rows="6" id="comentario" placeholder="Comentario*" name="text"></textarea>
+                    </div>
+                    
+                                        
+
+                    
+
+
+
+            </div>
+                </form>
+        </div>
+      </div>
+      <br>
+   
 
       
         <!-- footer -->
@@ -112,7 +177,7 @@
             <h2>Nuestras redes sociales:</h2>
             <div class="red-social">
               <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-instagram"></a>
+              <a href="https://www.instagram.com/bnja.cth/" class="fa fa-instagram"></a>
               <a href="#" class="fa fa-twitter"></a>
             </div>
           </div>
