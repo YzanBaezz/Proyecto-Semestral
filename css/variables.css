@@ -1,4 +1,5 @@
 
+/* NOSE PARA QUE ES */
 .fondoletrasmenu{
     color: #fff !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,6 +9,8 @@
 .fondomenu{
     background-color: #000 !important;
 }
+
+/* CARROUSEL UTILIZADO EN LA PANTALLA DE INICIO*/
 
 .carousel-item p{
     font-size: 4rem;
@@ -33,6 +36,8 @@
     font-style:normal;
 }
 
+/* SIMPLES AJUSTES EN BODY*/
+
 body{
 
     background-color: rgba(180, 175, 175, 0.504) !important;
@@ -53,25 +58,32 @@ body{
     margin-top: -10px;
 }
 
-.texto{
+/*-- cartas usadas para mostrar autos  --*/
 
-    color: rgb(186, 12, 12);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style:normal;
-
-}
+/* VER PORQUE EL FLOAT:CENTER TIRABA ERROR ------CARTA 1 --------CARTA 2 (SIN USO)*/
 
 .carta1 {
 
     border: #000 solid;
     background-color: #000;
     color: #fff;
-    float:center;
     margin-left:60px;
     margin-top: 70px;
     margin-bottom: 70px;
 
 }
+
+.carta2{
+
+    background-color: #000;
+    color: #fff;
+    float:center;
+    margin-left: auto;
+    margin-top: 100px;
+
+}
+
+/*-- hover que al pasar el raton se agranda la img --*/
 
 .col-xl-3 img:hover{
     transform:  scale(1.15);
@@ -88,15 +100,7 @@ body{
  
 }
 
-.carta2{
-
-    background-color: #000;
-    color: #fff;
-    float:center;
-    margin-left: auto;
-    margin-top: 100px;
-
-}
+/*-- arreglar tamaño de imgs  sin fondo de autos --*/
 
 .cimg{
     height: 109px;
@@ -105,6 +109,7 @@ body{
 }
 
 
+/* FOOTER UTILIZADO PARA LA PAG */
 
 .pie-pagina{
 
@@ -201,6 +206,7 @@ body{
 
 
 
+/* CARTAS UTILIZADAS PARA SECCIONES DE CADA MARCA */
 
 .body{
     width:100%;
@@ -275,6 +281,7 @@ body{
     color: #fff;
 }
 
+/* PROBANDO QUE EL FOOTER SE MATENGA SIEMPRE ABAJO*/
 
 footer{
     position: absolute;
@@ -284,7 +291,13 @@ footer{
 
 /*-- texto responsivo --*/
 
-.texto-res{
+
+.texto{
+
+    color: rgb(186, 12, 12);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:normal;
+    margin-top: 10px;
 
 }
 
@@ -292,4 +305,11 @@ footer{
 
 .img-res{
 
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
