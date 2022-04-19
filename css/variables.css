@@ -1,5 +1,13 @@
 
-/* NOSE PARA QUE ES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* letras nav*/
 .fondoletrasmenu{
     color: #fff !important;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,7 +75,7 @@ body{
     border: #000 solid;
     background-color: #000;
     color: #fff;
-    margin-left:60px;
+    margin-left:40px;
     margin-top: 70px;
     margin-bottom: 70px;
 
@@ -304,9 +312,6 @@ footer{
 
 /*-- imgs logos marcas responsivas --*/
 
-.img-res{
-
-}
 
 .img-fluid{
     max-width: 100%;

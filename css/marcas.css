@@ -8,17 +8,8 @@
 body{
 
     background-color: rgba(180, 175, 175, 0.504) !important;
-}
 
-h2{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
-
-.card{
-    size: 300px;
-}
-
 
 /* letra y color de las nav*/
 
@@ -28,17 +19,92 @@ h2{
 
 }
 
-/* texto de autos*/
+/* LOGO MARCAS*/
 
-.texto{
+.img4{
+    justify-content: center; /* centrar de manera horizontal*/
+    align-items: center; /* centrar de manera vertical*/
+    display: flex;
+    width: 180;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
-    color: rgb(186, 12, 12);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style:normal;
-    margin-top: 10px;
-    text-align: center;
+/* CARTAS UTILIZADAS PARA SECCIONES DE CADA MARCA */
+
+.body{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 30px;
+
 
 }
+
+.container1{
+    width:100%;
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap;
+
+
+}
+.card{
+    width:100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 70%;
+
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #0b2369;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
 
 /* footer*/
 
