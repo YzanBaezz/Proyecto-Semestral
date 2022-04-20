@@ -10,6 +10,13 @@ body{
     background-color: rgba(180, 175, 175, 0.504) !important;
 
 }
+figure{
+    display: flex;
+    justify-content: center; /* centrar de manera horizontal*/
+    align-items: center; /* centrar de manera vertical*/
+
+
+}
 
 /* letra y color de las nav*/
 
@@ -25,9 +32,19 @@ body{
     justify-content: center; /* centrar de manera horizontal*/
     align-items: center; /* centrar de manera vertical*/
     display: flex;
-    width: 180;
     margin-top: 15px;
     margin-bottom: 15px;
+    height: auto;
+}
+
+@media screen and(max-width: 390px){
+    .img4{
+        width: 60%;
+        justify-content: center; /* centrar de manera horizontal*/
+        align-items: center; /* centrar de manera vertical*/
+        display: flex;
+    }
+
 }
 
 /* CARTAS UTILIZADAS PARA SECCIONES DE CADA MARCA */
@@ -46,7 +63,7 @@ body{
 .container1{
     width:100%;
     display: flex;
-    max-width: 1100px;
+    max-width: 1280px;
     flex-wrap: wrap;
 
 
@@ -94,14 +111,14 @@ body{
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
+    color: #bb1b1b;
+    border: 1px solid #bb1b1b;
     border-radius: 4px;
     transition: all 400ms ease;
 }
 
 .card .contenido a:hover{
-    background: #2fb4cc;
+    background: #bb1b1b;
     color: #fff;
 }
 
