@@ -77,28 +77,28 @@
 
                     <div class="form-group">
                         <label for="Nombre">Nombre Completo:</label>
-                        <input name="nombre"type="text" class="form-control" id="nombre" placeholder="Nombre Completo*" name="Nombre Completo">
+                        <input name="nombre"type="text" class="form-control" id="nombre" placeholder="Nombre Completo*">
                     </div>
 
                     <div class="form-group">
                         <label for="Email">E-mail:</label>
-                        <input name="email"type="email" class="form-control" id="correo" placeholder="E-mail*" name="Email">
+                        <input name="email"type="email" class="form-control" id="correo" placeholder="E-mail*">
                     </div>
 
                     <div class="form-group">
                         <label for="Rut">Rut:</label>
-                        <input name="Rut" type="number" class="form-control" id="rut" placeholder="Ingrese rut*" name="Rut">
+                        <input name="Rut" type="number" class="form-control" id="rut" placeholder="Ingrese rut*">
                     </div>
 
                     <div class="form-group">
                         <label for="Telefono">Telefono:</label>
-                        <input name="telefono"type="number" class="form-control" id="telefono" placeholder="Telefono*" name="telefono">
+                        <input name="telefono"type="number" class="form-control" id="telefono" placeholder="Telefono*">
                     </div>
 
                     <div class="form-group">
-                        <label for="Region">Region:</label>
-                        <select name="Region" id="Region">
-                          <option value selected disable value="">Seleccione....</option>
+                      <label for="Region">Region:</label>
+                      <select class="form-select" aria-label="">
+                          <option selected disabled value="">Seleccione....</option>
                           <option value="I Región de Tarapacá">I Región de Tarapacá</option>
                           <option value="II Región de Antofagasta">II Región de Antofagasta</option>
                           <option value=" III Región de Atacama"> III Región de Atacama</option>
@@ -120,29 +120,32 @@
 
                     <div class="form-group">
                       <label for="Comuna">Comuna:</label>
-                      <input name="Comuna" type="text" class="form-control" id="Comuna" placeholder="Comuna*" name="Comuna">
+                      <input name="Comuna" type="text" class="form-control" id="Comuna" placeholder="Comuna*">
                     </div>
 
                     <div class="form-group">
                       <label for="Patente">Patente</label>
-                      <input name="Patente" type="text" class="form-control" id="Patente" placeholder="Patente*" name="Patente">
+                      <input name="Patente" type="text" class="form-control" id="Patente" placeholder="Patente*">
                     </div>
 
                     <div class="form-group">
                       <label for="Asunto">Asunto:</label>
-                      <select name="Asunto" id="Asunto">
-                        <option value selected disable value="">Seleccione Asunto..*</option>
+                      <select class="form-select" aria-label="">
+                        <option selected disabled value="">Seleccione Asunto..*</option>
+                        <option value="Consultar disponibilidad">Disponibilidad</option>
                         <option value="Falla mecánica">Falla mecánica</option>
                         <option value="Demora entrega vehículo">Demora entrega vehículo</option>
                         <option value="Documentación pendiente">Documentación pendiente</option>
-                        <option value="Accesorios Pendientes">Accesorios pendientes</option>
                         <option value="Transferencia vehículo">Transferencia vehículo</option>
                       </select>
                     </div>
 
                     <div class="form-group">
+                      <label for="Solicitud">Ingrese su solicitud:</label>
                       <textarea class="form-control" rows="6" id="comentario" placeholder="Comentario*" name="text"></textarea>
                     </div>
+
+                    <button type="submit" class="btn btn-danger">Enviar</button>
 
                     
                   
