@@ -88,6 +88,37 @@ body{
 
     }
 }
+@media screen and (max-width:820px){
+    .col{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width:1920px){
+    .col{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width:1400px){
+    .col{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width:991px){
+    .col{
+        display: flex;
+        justify-content: center;
+
+    }
+}
 
 .carta2{
 
@@ -216,9 +247,6 @@ body{
     width: 100%;
 }
 
-#galeria img:hover{
-    border: 5px solid #fff;
-}
 
 
 
