@@ -12,8 +12,8 @@ img{
 
 body{
 
-    font-family: 'Roboto';
-    background-color:  rgba(180, 175, 175, 0.504);
+    background-color:  rgba(180, 175, 175, 0.504) !important;
+
 }
 
 form{
@@ -38,29 +38,29 @@ button{
     font-size: 16px;
 }
 
-h1{
+.h1{
     
     margin-bottom: 10px;
     font-family: 'Roboto';
     color: white;
 }
 
-h6{
+.h6{
     color: white;
     font-family: 'Roboto';
 }
 
-a{
+.a{
     color: white;
     text-decoration: none;
 }
 
-a:hover{
+.a:hover{
     color: white;
     text-decoration: underline;
 }
 
-p{
+.p{
     text-align: center;
     font-size: 16px;
 }
@@ -82,11 +82,16 @@ p{
 }
 
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* footer*/
-.footer{
-    position: absolute;
-}
+
 .pie-pagina{
 
     width: 100%;
@@ -165,7 +170,5 @@ p{
     }
     
 }
-
-
 
 
