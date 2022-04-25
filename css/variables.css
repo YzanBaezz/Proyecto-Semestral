@@ -66,16 +66,16 @@ body{
     margin-top: -10px;
 }
 
-/*-- cartas usadas para mostrar autos  --*/
-
-
+/*-- card title usado en marcas-disponibles edita el texto --*/
 
 .card-title {
     justify-content: center;
     align-items: center;
     display: flex;
+    
 }
 
+/*-- imgs de logos de card --*/
 .img-logoss {
     display: flex;
     justify-content: center;
