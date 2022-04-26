@@ -5,9 +5,21 @@
     text-decoration: none;
 }
 
+.img-logoo{
+    width: 55px;
+    border-radius: 10px 0;
+}
+
 img{
-    height: 60px;
+    height: 55px;
     
+}
+
+/* letras nav*/
+.fondoletrasmenu{
+    color: #fff !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body{
@@ -27,7 +39,14 @@ form{
     
 }
 
-button{
+@media screen and(max-width: 400px){
+    form{
+        width: 300px;
+        
+    }
+}
+
+.button{
     background:rgb(160, 27, 27);
     width: 100%;
     border: 1px solid #000;
