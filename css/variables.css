@@ -338,6 +338,18 @@ footer{
 
 }
 
+.h1{
+    
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.h6{
+    color: white;
+    font-family: 'Roboto';
+}
+
 /*-- imgs logos marcas responsivas --*/
 
 
@@ -348,10 +360,6 @@ footer{
     margin-bottom: 10px;
 }
 
-/*-- forms--*/
-form{
-    margin-bottom: 15px;
-}
 
 .logoauto{
     width: 83;
