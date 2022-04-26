@@ -56,6 +56,15 @@ form{
     font-family: 'Roboto';
     font-size: 16px;
 }
+/*-- alertas javascript*/
+
+.alertas {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #e8c0c0e8;
+    padding-top: 20px;
+}
 
 .h1{
     
