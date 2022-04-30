@@ -18,6 +18,11 @@
     background-color: #000 !important;
 }
 
+.text-center {
+    padding: 20px 5px 10px 5px;
+    color: #1e2124;
+}
+
 /* CARROUSEL UTILIZADO EN LA PANTALLA DE INICIO*/
 
 .carousel-item p{
