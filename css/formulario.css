@@ -46,15 +46,11 @@ body{
     }
 }
 
-.button{
-    background:rgb(160, 27, 27);
-    width: 100%;
-    border: 1px solid #000;
-    padding: 12px;
-    color:#fff;
-    margin: 10px 0;
-    font-family: 'Roboto';
-    font-size: 16px;
+.btn-danger{
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
 }
 /*-- alertas javascript*/
 
@@ -88,9 +84,9 @@ body{
     text-decoration: underline;
 }
 
-.p{
-    text-align: center;
-    font-size: 16px;
+
+.text-center{
+    font-size: 20px;
 }
 
 .grupo{
