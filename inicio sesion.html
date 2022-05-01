@@ -17,7 +17,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link href="css/registro_ini.css" rel="stylesheet" type="text/css">
+    <link href="css/inicio.css" rel="stylesheet" type="text/css">
 
     <link rel="shortcut icon" href="img/logo/Logocompañia.png" type="image/x-icon">
 
@@ -56,7 +56,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cuenta</a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="http://127.0.0.2:5500/Registro-sesion.html">Registro</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.2:5500/Registro%20sesion.html">Registro</a></li>
                 <li><a class="dropdown-item" href="http://127.0.0.2:5500/inicio%20sesion.html">Inicio Sesión </a></li>  
                 </ul>
             </li>
@@ -67,7 +67,7 @@
 
 <main>
 
-    <form action="" method="POST" id="formulario">
+    <form action="pagina home.html" method="POST" id="formulario">
             <h1>Inicio Sesion</h1></div>
         <!-- Grupo: Nombre -->
             <div class="formulario__grupo" id="grupo__nombre">
@@ -76,7 +76,7 @@
                         <input  class="formulario__input" type="text" name="nombre" id="nombre"   placeholder="Ingresar-Nombre*"> 
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>          
                     </div>
-                <p class="formulario__input-error"> El nombre tiene que ser de 1 a 30 digitos y solo puede contener letras,numeros y tildes</p>
+                <p class="formulario__input-error"> El nombre tiene que ser de 1 a 30 digitos y solo puede contener letras, espacios y tildes.</p>
             </div>
         <!-- Grupo: Correo -->
             <div class="formulario__grupo" id="grupo__correo">
@@ -144,7 +144,7 @@
         </div>
     </footer>
 
-    <script src="js/form.js"></script>
+    <script src="js/inicio.js"></script>
 
 </body>
 </html>
