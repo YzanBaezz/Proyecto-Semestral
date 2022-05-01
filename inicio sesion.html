@@ -17,7 +17,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link href="css/formulario.css" rel="stylesheet" type="text/css">
+    <link href="css/registro_ini.css" rel="stylesheet" type="text/css">
 
     <link rel="shortcut icon" href="img/logo/Logocompañia.png" type="image/x-icon">
 
@@ -53,45 +53,65 @@
                 <li><a class="dropdown-item" href="http://127.0.0.2:5500/Camionetas.html">Camionetas </a></li>  
                 </ul>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cuenta</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://127.0.0.2:5500/Registro-sesion.html">Registro</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.2:5500/inicio-sesion.html">Inicio Sesión </a></li>  
+                </ul>
+            </li>
             </ul>
-            <div class=" d-flex justify-content-end  ">
-                <a class="nav-link fondoletrasmenu" href="#">Inicio de Sesión</a>
-            </div>
-            <div class=" d-flex justify-content-end ">
-                <a class="nav-link fondoletrasmenu" href="#">Registro</a>
-            </div>
         </div>
         </div>
     </nav>
 
-  <div class="container">
-    <form action="" method="POST" id="form">
-        <div class="form">
-            <div class="row">
-            <div class="col-10">
-            <h1 class="h1">Inicio Sesion</h1></div><div class="col-2"><a href=""><img src="img/logo/Logocompañia.png" align="right" alt=""></a></div>
-            </div>
-            <div class="grupo">
-                <label for="nombre"><h6 class="h6">Nombre:</h6></label>
-                <input  class="line" type="text" name="nombre" id="nombre"  required placeholder="Ingresar-Nombre*">           
-            </div>
-            <div class="grupo">
-                <label for="correo"><h6 class="h6">Email:</h6></label>
-                <input class="line" type="email" name="correo" id="correo" required placeholder="Ingresar-Correo*">       
-            </div>
-            <div class="grupo">
-                <label for="clave"><h6 class="h6">Clave:</h6></label>
-                <input class="line" type="password" name="clave" id="clave" required placeholder="Ingresar-Contraseña*">
-            </div>
+<main>
 
-            <button class="button" type="submit">Iniciar Sesion</button>
-            <p class="alertas" id="alertas"></p>
+    <form action="" method="POST" id="formulario">
+            <h1>Inicio Sesion</h1></div>
+        <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label"> Nombre </label>
+                    <div class="formulario__grupo-input">
+                        <input  class="formulario__input" type="text" name="nombre" id="nombre"   placeholder="Ingresar-Nombre*"> 
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>          
+                    </div>
+                <p class="formulario__input-error"> El nombre tiene que ser de 1 a 30 digitos y solo puede contener letras,numeros y tildes</p>
+            </div>
+        <!-- Grupo: Correo -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label"> Email </label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="email" name="correo" id="correo"  placeholder="Ingresar-Correo*">
+                        <i class="formulario__validacion-estado  fa-solid fa-circle-xmark"></i>      
+                    </div>
+                <p class="formulario__input-error"> El correo puede contener numeros, letras, guiones y puntos.</p>
+            </div>
+        <!-- Grupo: Clave -->
+        <div class="formulario__grupo" id="grupo__clave">
+            <label for="clave" class="formulario__label"> Clave </label>
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="password" name="clave" id="clave"  placeholder="Ingresar-Contraseña*">
+                    <i class="formulario__validacion-estado  fa-solid fa-circle-xmark"></i>
+                </div>
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Rellenar campos correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button class="formulario__btn" type="submit">Entrar</button> <!--class="button"-->
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> Formulario enviado! </p>
+        </div>
         
 
-        <p class="p"> <a href="http://127.0.0.2:5500/Registro%20sesion.html" class="a"> ¿No Tengo Cuenta? Registrate aqui </a></p>
-        </div>
+        <p class="formulario__grupo-btn-enviar ini"> <a  class="link" href="http://127.0.0.2:5500/Registro%20sesion.html" class="a"> ¿No Tengo Cuenta? Registrate aqui </a></p>
+
     </form>
-    </div>
+    </main>
+    
     
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -124,7 +144,7 @@
         </div>
     </footer>
 
-    <script src="js/var.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 </html>
