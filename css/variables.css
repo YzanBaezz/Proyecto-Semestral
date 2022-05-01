@@ -224,7 +224,7 @@ body{
     font-size: 15px;
 
 }
-@media screen and (max-width:820px){
+@media screen and (max-width:920px){
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -372,4 +372,81 @@ footer{
 }
 
 
-/* ---- navbar final --- */
+/* ---- especificaciones autos ----*/
+
+.container__resp{
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.carta__foto{
+    width: 100%;
+    overflow: hidden;
+    cursor: default;
+    
+}
+
+.carta__foto .titulo__esp {
+    padding: 5px;
+    text-align: center;
+}
+
+
+.carta__foto h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.especificacion{
+    max-width: 150px;
+    width: 100%;
+    justify-content: center;
+}
+
+figure{
+    justify-content: center;
+    display: grid;
+}
+
+
+
+@media screen and (max-width:690px){
+    .carta__foto h3 {
+        font-weight: 500;
+        font-size: 13px;
+        
+    }
+
+}
+
+
+@media screen and (max-width:420px){
+    .especificacion {
+        width: 70%;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width:620px){
+    .especificacion {
+        width: 70%;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:820px){
+    .especificacion {
+        width: 70%;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
