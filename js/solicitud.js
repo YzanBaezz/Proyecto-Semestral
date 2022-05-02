@@ -2,8 +2,8 @@ const solicitud = document.getElementById('solicitud');
 const inputs = document.querySelectorAll('#solicitud input');
 
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{5,40}$/, // Letras y espacios, pueden llevar acentos.
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
@@ -14,9 +14,10 @@ const campos = {
 }
 
 const validarSolicitud = (e) => {
-    switch(e.target.name) {
+    switch (e.target.name){
         case "nombre":
-            validarCampo(expresiones.nombre, e.target, 'nombre');  
+            validarCampo(expresiones.nombre, e.target, 'nombre');
+  
         break;
         case "correo":
             validarCampo(expresiones.correo, e.target, 'correo');
@@ -26,7 +27,6 @@ const validarSolicitud = (e) => {
             validarCampo(expresiones.telefono, e.target, 'telefono');
 
         break;
-
     }
 
 }
@@ -35,16 +35,15 @@ const validarCampo = (expresion, input, campo) => {
     if(expresion.test(input.value)){
         document.getElementById(`grupo__${campo}`).classList.remove('solicitud__grupo-incorrecto');
         document.getElementById(`grupo__${campo}`).classList.add('solicitud__grupo-correcto');
-        docuemnt.querySelector(`#grupo__${campo}.solicitud__input-error`).classList.remove('solicitud__input-error-activo');
+        document.querySelector(`#grupo__${campo} .solicitud__input-error`).classList.remove('solicitud__input-error-activo');
         campos[campo] = true;
 
-    
-    } else{
+    } else {
         document.getElementById(`grupo__${campo}`).classList.add('solicitud__grupo-incorrecto');
         document.getElementById(`grupo__${campo}`).classList.remove('solicitud__grupo-correcto');
-        docuemnt.querySelector(`#grupo__${campo}.solicitud__input-error`).classList.add('solicitud__input-error-activo');
+        document.querySelector(`#grupo__${campo} .solicitud__input-error`).classList.add('solicitud__input-error-activo');
         campos[campo] = false;
-    } 
+    }
 }
 
 inputs.forEach((input) => {
@@ -54,16 +53,25 @@ inputs.forEach((input) => {
 });
 
 
-
-solicitud.addEventListener('submit', (e) => {
+solicitud.addEventListener('submit',(e) => {
     e.preventDefault();
 
-    if(campos.nombre && campos.correo && campos.telefono){
+    if(campos.nombre && campos.correo && campos.telefono ){
         solicitud.reset();
+
+        document.getElementById('solicitud__mensaje-exito').classList.add('solicitud__mensaje-exito-activo');
+        setTimeout(() => {
+            document.getElementById('solicitud__mensaje-exito').classList.remove('solicitud__mensaje-exito-activo');
+
+        }, 3000);
+    } else {
+        document.getElementById('solicitud__mensaje').classList.add('solicitud__mensaje-activo');
+        setTimeout(() => {
+            document.getElementById('solicitud__mensaje').classList.remove('solicitud__mensaje-activo');
+
+        }, 3000);
     }
 
 
-
 });
-
     

@@ -34,6 +34,7 @@ body{
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 7px 13px 37px #000;
+    width: 50%;
     
 }
 
@@ -120,6 +121,7 @@ body{
     color: #fff;
     cursor: pointer;
 }
+
 .solicitud__input{
     width: 100%;
     background:#fff;
@@ -140,6 +142,7 @@ body{
     font-size: 13px;
     margin-bottom: 0;
     display: none;
+   
 }
 .solicitud__input-error-activo {
     display: block;
@@ -161,9 +164,6 @@ body{
 
 }
 
-.form-group{
-    width: 100%;
-}
 .solicitud__mensaje-activo{
     display: block;
 }
@@ -176,6 +176,7 @@ body{
 .solicitud__mensaje-exito-activo{
     display: block;
 }
+
 
 /*---- ---- estilos para validacion ---- ---*/
 .solicitud__grupo-correcto .solicitud__label{
