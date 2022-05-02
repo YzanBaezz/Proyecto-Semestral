@@ -63,13 +63,13 @@ solicitud.addEventListener('submit',(e) => {
         setTimeout(() => {
             document.getElementById('solicitud__mensaje-exito').classList.remove('solicitud__mensaje-exito-activo');
 
-        }, 3000);
+        }, 1500);
     } else {
         document.getElementById('solicitud__mensaje').classList.add('solicitud__mensaje-activo');
         setTimeout(() => {
             document.getElementById('solicitud__mensaje').classList.remove('solicitud__mensaje-activo');
 
-        }, 3000);
+        }, 2000);
     }
 
 
