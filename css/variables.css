@@ -393,6 +393,8 @@ footer{
     max-width: 1200px;
     margin-top: 10px;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .carta__foto{
     width: 100%;
@@ -423,6 +425,14 @@ figure{
     display: grid;
 }
 
+@media screen and (max-width:820px){
+    .carta__foto h3 {
+        font-weight: 500;
+        font-size: 16px;
+        
+    }
+
+}
 
 
 @media screen and (max-width:690px){
@@ -434,17 +444,23 @@ figure{
 
 }
 
+@media screen and (max-width:420px){
+    .carta__foto h3 {
+        font-size: 10px
+    }
+}
+
 
 @media screen and (max-width:420px){
     .especificacion {
         width: 70%;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 }
 @media screen and (max-width:620px){
     .especificacion {
         width: 70%;
-        margin-left: 15px;
+        margin-left: 13px;
     }
 }
 
