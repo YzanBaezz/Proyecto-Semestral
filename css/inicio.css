@@ -194,6 +194,18 @@ main {
     }
 }
 
+@media screen  and (max-width: 413px) {
+    .formulario__mensaje p {
+        font-size: 15px;
+    }
+}
+
+@media screen  and (max-width: 390px) {
+    .formulario__mensaje p {
+        font-size: 12px;
+    }
+}
+
 
 .ini{
     display: flex;

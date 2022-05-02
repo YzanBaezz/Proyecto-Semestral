@@ -1,11 +1,93 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "lista_auto": [
+                  {
+                    "id_auto": 1,
+                    "nombre_auto": "Chevrolet Camaro",
+                    "img_auto": "http://127.0.0.2:5500/img/Chevrolet/chevrolet_camaro_1-removebg-preview.png",
+                    "categoria": "Auto",
+                    "precio_auto": "$40.190.000"
+                    
+                  },
+                  {
+                    "id_auto": 2,
+                    "nombre_auto": "Chevrolet Onix Sedan",
+                    "img_auto": "http://127.0.0.2:5500/img/Chevrolet%20Sedan%20Onix/kisspng-chevrolet-prisma-chevrolet-onix-general-motors-201-e-joy-bowles-5b049c4ff18424.8251373515270288159893.png",
+                    "categoria": "Auto",
+                    "precio_auto": "$8.590.000"
+                  },
+                  {
+                    "id_auto": 3,
+                    "nombre_auto": "Chevrolet Sail",
+                    "img_auto": "http://127.0.0.2:5500/img/Chevrolet%20Sail/kisspng-chevrolet-sail-car-chevrolet-corvette-chevrolet-sp-chevrolet-sail-5b16de28868bb7.7218409915282253205511.png",
+                    "categoria": "Auto",
+                    "precio_auto": "$6.590.000"
+                  },
+                  {
+                    "id_auto": 4,
+                    "nombre_auto": "Ford All New Territory",
+                    "img_auto": "http://127.0.0.2:5500/img/Ford%20Territorry/territory.png",
+                    "descripcion_auto": "Diseñada para maximizar el confort y espacio interior para disfrutar cualquier viaje.",
+                    "categoria": "Camioneta",
+                    "precio_auto": "$22.490.000"
+                  },
+                  {
+                    "id_auto": 5,
+                    "nombre_auto": "Ford Focus",
+                    "img_auto": "http://127.0.0.2:5500/img/Ford%20Focus/ford-focusss-removebg-preview.png",
+                    "categoria": "Auto",
+                    "precio_auto": "$11.590.000"
+                  },
+                  {
+                    "id_auto": 6,
+                    "nombre_auto": "Ford Raptor",
+                    "img_auto": "http://127.0.0.2:5500/img/Ford%20Raptor%202018/1416685587-removebg-preview.png",
+                    "categoria": "Camioneta",
+                    "precio_auto": "$45.000.000"
+                  },
+                  {
+                    "id_auto": 7,
+                    "nombre_auto": "Hyundai Accent",
+                    "img_auto": "http://127.0.0.2:5500/img/Hyundai%20Accent%202022/2022-accent-se-olympus-silver-centered-browse-hero_Browse.png",
+                    "categoria": "Auto",
+                    "precio_auto": "$12.590.000"
+                  },
+                  {
+                    "id_auto": 8,
+                    "nombre_auto": "Hyundai Tucson",
+                    "img_auto": "http://127.0.0.2:5500/img/Hyundai%20Tucson/20200914-HYUNDAI-TUCSON-2022-01-removebg-preview.png",
+                    "categoria": "Camioneta",
+                    "precio_auto": "$20.290.000"
+                  },
+                  {
+                    "id_auto": 9,
+                    "nombre_auto": "Hyundai Veloster",
+                    "img_auto": "http://127.0.0.2:5500/img/Hyundai%20Veloster/descarga-1-4-removebg-preview.png",
+                    "categoria": "Auto",
+                    "precio_auto": "$27.590.000"
+                  },
+                  {
+                    "id_auto": 10,
+                    "nombre_auto": "Jeep Cherokee",
+                    "img_auto": "http://127.0.0.2:5500/img/Jeep%20Cherokee/kisspng-jeep-compact-car-compact-sport-utility-vehicle-jeep-brunei-vehicle-compass-5bab9f98c1bcd8.4210524115379741687936.png",
+                    "categoria": "Camioneta",
+                    "precio_auto": "$22.490.000"
+                  },
+                  {
+                    "id_auto": 11,
+                    "nombre_auto": "Jeep Gladiator Rubicon",
+                    "img_auto": "http://127.0.0.2:5500/img/Jeep%20Wrangler/5a2964a7ab3ef7.3818321015126621837015.png",
+                    "categoria": "Camioneta",
+                    "precio_auto": "$48.990.000"
+                  },
+                  {
+                    "id_auto": 12,
+                    "nombre_auto": "Jeep Wrangler Rubricon",
+                    "img_auto": "http://127.0.0.2:5500/img/Jeep%20Gladiator/jeep-gladiator-versiones-configuracion-y-ficha-tecnica-para-argentina-removebg-preview.png",
+                    "categoria": "Camioneta",
+                    "precio_auto": "$50.990.000"
+                  }
+                ],
+                "profile": {
+                  "name": "typicode"
+                }
 }
