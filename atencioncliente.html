@@ -74,79 +74,85 @@
 
       <div class="container">
           <div class="form">
-                <form name="Formulario" method="post" action="documentoadop.html">
-                    <h1 class="h1"> Solicitud </h1>
+            <form name="Formulario" id="solicitud" method="post" >
+              <h1 class="h1"> Solicitud </h1>
 
-                    <div class="form-group">
-                        <label for="Nombre"> <h6 class="h6"> Nombre Completo: </h6></label>
-                        <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre Completo*">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="correo"> <h6 class="h6"> E-mail: </h6></label>
-                        <input name="correo"type="email" class="form-control" id="correo" placeholder="E-mail*">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Rut"> <h6 class="h6"> Rut: </h6></label>
-                        <input name="Rut" type="text" class="form-control" id="rut" placeholder="Ingrese rut*">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Telefono"> <h6 class="h6"> Telefono: </h6></label>
-                        <input name="telefono"type="number" class="form-control" id="telefono" placeholder="Telefono*">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="Region"> <h6 class="h6"> Region: </h6> </label>
-                      <select class="form-select" aria-label="">
-                          <option selected disabled value="">Seleccione....</option>
-                          <option value="I Región de Tarapacá">I Región de Tarapacá</option>
-                          <option value="II Región de Antofagasta">II Región de Antofagasta</option>
-                          <option value=" III Región de Atacama"> III Región de Atacama</option>
-                          <option value=" IV Región de Coquimbo"> IV Región de Coquimbo</option>
-                          <option value=" V Región de Valparaíso"> V Región de Valparaíso</option>
-                          <option value="VI Región del Libertador General Bernardo O’Higgins">VI Región del Libertador General Bernardo O’Higgins</option>
-                          <option value="VII Región del Maule">VII Región del Maule</option>
-                          <option value="VIII Región del Biobío">VIII Región del Biobío</option>
-                          <option value="IX Región de La Araucanía">IX Región de La Araucanía</option>
-                          <option value=" X Región de Los Lagos"> X Región de Los Lagos</option>
-                          <option value="XI Región Aysén del General Carlos Ibáñez del Campo">XI Región Aysén del General Carlos Ibáñez del Campo</option>
-                          <option value=" XII Región de Magallanes y Antártica Chilena"> XII Región de Magallanes y Antártica Chilena</option>
-                          <option value="Región Metropolitana de Santiago">Región Metropolitana de Santiago</option>
-                          <option value="XIV Región de Los Ríos">XIV Región de Los Ríos</option>
-                          <option value="XV Región de Arica y Parinacota">XV Región de Arica y Parinacota</option>
-                          <option value="XVI Región de Ñuble">XVI Región de Ñuble</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="Comuna"> <h6 class="h6"> Comuna: </h6> </label>
-                      <input name="Comuna" type="text" class="form-control" id="Comuna" placeholder="Comuna*">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="Asunto"> <h6 class="h6"> Asunto: </h6></label>
-                      <select class="form-select" aria-label="">
-                        <option selected disabled value="">Seleccione Asunto..*</option>
-                        <option value="Consultar disponibilidad">Disponibilidad</option>
-                        <option value="Falla mecánica">Falla mecánica</option>
-                        <option value="Demora entrega vehículo">Demora entrega vehículo</option>
-                        <option value="Documentación pendiente">Documentación pendiente</option>
-                        <option value="Transferencia vehículo">Transferencia vehículo</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="Solicitud"> <h6 class="h6"> Ingrese su solicitud: </h6></label>
-                      <textarea class="form-control" rows="6" id="comentario" placeholder="Comentario*" name="text"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-danger">Enviar</button>
-
+              <div class="solicitud__grupo" id="grupo__nombre">
+                  <label for="nombre" class="solicitud__label">Nombre:</label>
+                  <div class="solicitud__grupo-input">
+                    <input name="nombre" type="text" class="solicitud__input" id="nombre" placeholder="Nombre*">
                   </div>
-                </form>
-      </div>
+                  <p class="solicitud__input-error">El nombre tiene que ser de 4 a 40 digitos y solo puede contener letras. </p>
+              </div>
+
+              <div class="solicitud__grupo" id="grupo__correo">
+                  <label for="correo" class="solicitud__label">Correo electronico:</label>
+                  <div class="solicitud__grupo-input">
+                    <input name="correo"type="email" class="solicitud__input" id="correo" placeholder="Correo*">
+                  </div>
+                  <p class="solicitud__input-error">El correo solo puede contener letras,números,puntos,guiones y guion bajo.</p>
+              </div>
+
+              <div class="solicitud_grupo" id="grupo__telefono">
+                  <label for="telefono" class="solicitud__label">Telefono:</label>
+                  <div class="solicitud__grupo-input">
+                    <input name="telefono"type="number" class="solicitud__input" id="telefono" placeholder="Telefono*">                          
+                  </div>
+                  <p class="solicitud__input-error">El telefono solo puede contener numeros y el maximo de 14 digitos.</p>
+              </div>
+
+              <div class="solicitud__grupo" id="grupo__region">
+                <label for="region" class="solicitud__label">Región</label>
+                <select class="form-select" aria-label="">
+                    <option selected disabled value="">Seleccione....</option>
+                    <option value="I Región de Tarapacá">I Región de Tarapacá</option>
+                    <option value="II Región de Antofagasta">II Región de Antofagasta</option>
+                    <option value=" III Región de Atacama"> III Región de Atacama</option>
+                    <option value=" IV Región de Coquimbo"> IV Región de Coquimbo</option>
+                    <option value=" V Región de Valparaíso"> V Región de Valparaíso</option>
+                    <option value="VI Región del Libertador General Bernardo O’Higgins">VI Región del Libertador General Bernardo O’Higgins</option>
+                    <option value="VII Región del Maule">VII Región del Maule</option>
+                    <option value="VIII Región del Biobío">VIII Región del Biobío</option>
+                    <option value="IX Región de La Araucanía">IX Región de La Araucanía</option>
+                    <option value=" X Región de Los Lagos"> X Región de Los Lagos</option>
+                    <option value="XI Región Aysén del General Carlos Ibáñez del Campo">XI Región Aysén del General Carlos Ibáñez del Campo</option>
+                    <option value=" XII Región de Magallanes y Antártica Chilena"> XII Región de Magallanes y Antártica Chilena</option>
+                    <option value="Región Metropolitana de Santiago">Región Metropolitana de Santiago</option>
+                    <option value="XIV Región de Los Ríos">XIV Región de Los Ríos</option>
+                    <option value="XV Región de Arica y Parinacota">XV Región de Arica y Parinacota</option>
+                    <option value="XVI Región de Ñuble">XVI Región de Ñuble</option>
+                  </select>
+              </div>
+
+
+              <div class="solicitud__grupo" id="grupo__asunto">
+                <label for="asunto" class="solicitud__label">Asunto</label>
+                <select class="form-select" aria-label="">
+                  <option selected disabled value="">Seleccione Asunto..*</option>
+                  <option value="Consultar disponibilidad">Disponibilidad</option>
+                  <option value="Falla mecánica">Falla mecánica</option>
+                  <option value="Demora entrega vehículo">Demora entrega vehículo</option>
+                  <option value="Documentación pendiente">Documentación pendiente</option>
+                  <option value="Transferencia vehículo">Transferencia vehículo</option>
+                </select>
+              </div>
+
+              <div class="solicitud__grupo" id="grupo__asunto">
+                <label for="comentario" class="comentario_label">Comentario</label>
+                <textarea class="form-control" rows="6" id="comentario" placeholder="Comentario*" name="comentario"></textarea>
+              </div>
+
+              <div class="solicitud__mensaje" id="solicitud__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellena la solicitud correctamente.</p>
+              </div>
+
+              <button type="submit" class="btn btn-danger">Enviar</button>
+              <p class="solicitud__mensaje-exito" id="solicitud__mensaje-exito">Su solicitud ha sido realizada con exito!</p>
+
+            </div>
+          </form>
+</div>
+              
    
 
       

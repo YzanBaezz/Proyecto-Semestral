@@ -29,15 +29,15 @@ body{
 }
 
 .form{
-
-    background:#212529;
+    background: #1e2124;
     padding: 50px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    width: 400px;
     box-shadow: 7px 13px 37px #000;
     
 }
+
+
 
 @media screen and(max-width: 400px){
     form{
@@ -45,6 +45,7 @@ body{
         
     }
 }
+
 
 .btn-danger{
     width: 100px;
@@ -65,13 +66,14 @@ body{
 .h1{
     
     margin-bottom: 10px;
-    font-family: 'Roboto';
+    font-family:Arial, Helvetica, sans-serif;
     color: white;
 }
 
 .h6{
     color: white;
-    font-family: 'Roboto';
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15;
 }
 
 .a{
@@ -113,6 +115,84 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.solicitud__label{
+    color: #fff;
+    cursor: pointer;
+}
+.solicitud__input{
+    width: 100%;
+    background:#fff;
+    border: 3px solid transparent ;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    transition: 1s ease all;
+}
+.solicitud__input:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163,0.4);
+}
+
+.solicitud__input-error {
+    color:#fff;
+    font-size: 13px;
+    margin-bottom: 0;
+    display: none;
+}
+.solicitud__input-error-activo {
+    display: block;
+}
+
+
+.solicitud__mensaje p {
+    color:#fff ;
+
+}
+.solicitud__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin: 10px;
+    display: none;
+
+}
+
+.form-group{
+    width: 100%;
+}
+.solicitud__mensaje-activo{
+    display: block;
+}
+.solicitud__mensaje-exito{
+    font-size: 15px;
+    color: #119200;
+    display: none;
+    
+}
+.solicitud__mensaje-exito-activo{
+    display: block;
+}
+
+/*---- ---- estilos para validacion ---- ---*/
+.solicitud__grupo-correcto .solicitud__label{
+    color: #119200;
+}
+.solicitud__grupo-correcto .solicitud_input{
+    border:2px solid #119200 ;
+}
+.solicitud__grupo-incorrecto .solicitud__label{
+    color:#bb2929;
+}
+.solicitud__grupo-incorrecto .solicitud__input{
+    border: 2px solid #bb2929 ;
+}
+
+
+
 
 /* footer*/
 
@@ -185,7 +265,7 @@ body{
     font-size: 15px;
 
 }
-@media screen and (max-width:820px){
+@media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
