@@ -21,7 +21,7 @@
             $("#cargar").click(function () {
                 //leer el servicio web
                 var n = $("#texto").val();
-                $.get("www.themealdb.com/api/json/v1/1/filter.php?i="+n, function (data) {
+                $.get("https://my-json-server.typicode.com/YzanBaezz/Proyecto-Semestral/lista_auto"+n, function (data) {
                     //recorro la lista con el ciclo for
                     $.each(data.meals, function (i, item) {
                         //mostrar cada elemento de la lista en una fila de la tabla
