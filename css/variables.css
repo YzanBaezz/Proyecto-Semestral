@@ -76,9 +76,10 @@ body{
     margin-bottom: 5px;
 }
 
-@media screen and (max-width:420px){
+
+@media screen and (max-width:576px){
     .container{
-        font-size: 12px;
+        font-size: 13px;
         
     }
     
