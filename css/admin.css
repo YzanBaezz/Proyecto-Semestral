@@ -2,7 +2,7 @@
     --main-bg-color: #000000 ;
     --main-text-color: #000000 ;
     --second-text-color: #d5dae8 ;
-    --second-bg-color: #c66728;
+    --second-bg-color: #a60e0ecc;
 }
 
 .primary-text {
@@ -102,6 +102,12 @@
 
     #wrapper.toggled #sidebar-wrapper {
         margin-left: -15rem;
+    }
+}
+
+@media(max-width: 504px) {
+    .col{
+        width: 70%;
     }
 }
 
