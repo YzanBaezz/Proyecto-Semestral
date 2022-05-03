@@ -71,6 +71,19 @@ body{
     margin-top: -10px;
 }
 
+.ratio {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:420px){
+    .container{
+        font-size: 12px;
+        
+    }
+    
+}
+
 /*-- cartas usadas para mostrar autos  --*/
 
 /* VER PORQUE EL FLOAT:CENTER TIRABA ERROR ------CARTA 1 --------CARTA 2 (SIN USO)*/
@@ -446,7 +459,7 @@ figure{
 
 @media screen and (max-width:420px){
     .carta__foto h3 {
-        font-size: 10px
+        font-size: 12px
     }
 }
 
