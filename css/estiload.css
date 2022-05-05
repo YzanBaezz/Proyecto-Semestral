@@ -168,7 +168,7 @@ body{
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
 }
 
@@ -180,13 +180,14 @@ body{
     justify-content: space-between;
     cursor: pointer;
 }
+
 .cardBox .card .numbers{
     position: relative;
     font-size: 2em;
     font-weight: 500;
 }
 .cardBox .card .cardName{
-    color: #000;
+    color:#000;
 }
 .cardBox .card .iconBox{
     font-size: 2.5em;
@@ -269,10 +270,14 @@ body{
     }
     .main{
         width: 100%;
+        left: 0;
     }
     .main.active{
         width: calc(100% - 300px);
         left: 300px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
