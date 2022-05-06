@@ -246,7 +246,7 @@ body{
 .details .recentOrders table tbody tr:last-child{
     border-bottom: none;
 }
- .details .recentOrders table tbody tr:hover{
+.details .recentOrders table tbody tr:hover{
     background: #bb2929;
     color: #fff;
 }
