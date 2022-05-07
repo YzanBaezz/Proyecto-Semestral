@@ -41,7 +41,74 @@
         </div>
         </div>
     </nav>
-    
 
+    <main>
+        <form action="" class="editarperfil" id="editarperfil">
+
+         <!--Grupo Nombre-->
+
+            <div class="editperfil__grupo" id="grupo_nombre">
+                <label for="nombre" class="editarperfil__label">Nombre:</label>
+                <div class="editperfil__grupo-input">
+                    <input type="text" class="editperfil__input" name="nombre" id="nombre" placeholder="Nuevo nombre">
+                </div>
+            </div>
+              <!--Grupo Usuario-->
+            <div class="editperfil__grupo" id="grupo_usuario">
+                <label for="usuario" class="editarperfil__label">Usuario:</label>
+                <div class="editperfil__grupo-input">
+                    <input type="text" class="editperfil__input" name="usuario" id="usuario" placeholder="Nuevo nombre usuario">
+                </div>
+            </div> 
+             <!--Grupo Contraseña-->
+            <div class="editperfil__grupo" id="grupo_password">
+                <label for="password2" class="editarperfil__label"> Nueva Contraseña</label>
+                <div class="editperfil__grupo-input">
+                    <input type="password" class="editperfil__input" name="password" id="password">
+                </div>
+            </div> 
+
+              <!--Grupo Contraseña 2-->
+
+            <div class="editperfil__grupo" id="grupo_password2">
+                <label for="pasgrupo_password2" class="editarperfil__label">Confirmar Contraseña:</label>
+                <div class="editperfil__grupo-input">
+                    <input type="password" class="editperfil__input" name="pasgrupo_password2" id="password2">
+                </div>
+                <p class="editperfil__input-error">Ambas contraseñas deben coincidir.</p>
+            </div>
+
+         <!-- Grupo Correo -->
+
+            <div class="editperfil__grupo" id="grupo_correo">
+                <label for="correo" class="editarperfil__label">Correo:</label>
+                <div class="editperfil__grupo-input">
+                    <input type="email" class="editperfil__input" name="correo" id="correo" placeholder="Correo">
+                </div>
+            </div>
+
+         <!--Grupo Telefono-->
+
+            <div class="editperfil__grupo" id="grupo_telefono">
+                <label for="telefono" class="editarperfil__label">Telefono:</label>
+                <div class="editperfil__grupo-input">
+                    <input type="text" class="editperfil__input" name="telefono" id="correo" placeholder="123456789">
+                </div>
+            </div>
+
+
+            <div class="editperfil_mensaje" id="editperfil_mensaje">
+                <p><b>Error:</b>Por favor rellena los campos correctamente.</p>
+            </div>
+
+            <div class="editperfil__grupo editperfil__grupo-btn-enviar">
+                <button type="submit" class="editperfil__btn">Aceptar</button>
+                <p class="editperfil__mensaje-exito" id="editperfil__mensaje-exito">Cambios aplicados correctamente.</p>
+            </div>
+
+        </form>
+    </main>
+    
+ <script src="js/valiperfil.js"></script>
 </body>
 </html>
