@@ -42,7 +42,12 @@
         </div>
     </nav>
 
+
+
     <main>
+
+        <h1>Editar perfil</h1>
+        
         <form action="" class="editarperfil" id="editarperfil">
 
          <!--Grupo Nombre-->
@@ -52,6 +57,7 @@
                 <div class="editperfil__grupo-input">
                     <input type="text" class="editperfil__input" name="nombre" id="nombre" placeholder="Nuevo nombre">
                 </div>
+                <p class="editperfil__input-error">El nombre tiene que ser de 4 a 40 digitos y solo puede contener letras.</p>
             </div>
               <!--Grupo Usuario-->
             <div class="editperfil__grupo" id="grupo_usuario">
@@ -59,6 +65,7 @@
                 <div class="editperfil__grupo-input">
                     <input type="text" class="editperfil__input" name="usuario" id="usuario" placeholder="Nuevo nombre usuario">
                 </div>
+                <p class="editperfil__input-error">El usuario solo puede contener numeros, letras y guion bajo.</p>
             </div> 
              <!--Grupo Contraseña-->
             <div class="editperfil__grupo" id="grupo_password">
@@ -66,6 +73,7 @@
                 <div class="editperfil__grupo-input">
                     <input type="password" class="editperfil__input" name="password" id="password">
                 </div>
+                <p class="editperfil__input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
             </div> 
 
               <!--Grupo Contraseña 2-->
@@ -85,6 +93,7 @@
                 <div class="editperfil__grupo-input">
                     <input type="email" class="editperfil__input" name="correo" id="correo" placeholder="Correo">
                 </div>
+                <p class="editperfil__input-error">El correo solo puede contener letras,números,puntos,guiones y guion bajo.</p>
             </div>
 
          <!--Grupo Telefono-->
@@ -94,6 +103,7 @@
                 <div class="editperfil__grupo-input">
                     <input type="text" class="editperfil__input" name="telefono" id="correo" placeholder="123456789">
                 </div>
+                <p class="editperfil__input-error">El telefono solo puede contener numeros y el maximo de 14 digitos.</p>
             </div>
 
 
@@ -108,6 +118,50 @@
 
         </form>
     </main>
+
+
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+            <figure>
+              <a href="http://127.0.0.2:5500/pagina-home.html">
+                <img src="img/logo/Logocompañia.png" alt="LOGO" class="img-fluid">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p> -Autos Nuevos y Usados</p>
+            <p> -Atencion Al Cliente</p>
+            <p> -Contactanos: <br> +56966263113</p>
+          </div>
+            
+          <div class="box">
+            <h2>Nuestras redes sociales:</h2>
+            <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/bnja.cth/" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+            </div>
+
+            <div class="box">
+              <h2>Donde encontrarnos:</h2>
+              <div class="ubicacion-local">
+                <a href="http://127.0.0.2:5500/mapa-api.html" class="fa-solid fa-location-dot"></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2022 <b>Autos Naves</b> - Todos los derechos reservados</small>
+      
+        </div>
+      </footer>
+
+
+
     
  <script src="js/valiperfil.js"></script>
 </body>
