@@ -31,7 +31,7 @@ main{
     position: relative;
 }
 
-.editperfil__input{
+.editarperfil__input{
     width: 100%;
     background: #fff;
     border: 3px solid transparent ;
@@ -94,8 +94,29 @@ main{
     transition: 1s ease all;   
 }
 
+.editperfil__mensaje-exito{
+    font-size: 15px;
+    color: #119200;
+    display: none;
+    
+}
+.editperfil__mensaje-exito-activo{
+    display: block;
+}
 
-
+/*---- ---- estilos para validacion ---- ---*/
+.editperfil__grupo-correcto .editarperfil__label{
+    color: #119200;
+}
+.editperfil__grupo-correcto .editarperfil__input{
+    border:2px solid #119200 ;
+}
+.editperfil__grupo-incorrecto .editarperfil__label{
+    color:#bb2929;
+}
+.editperfil__grupo-incorrecto .editarperfil__input{
+    border: 2px solid #bb2929 ;
+}
 
 /* footer*/
 
