@@ -3,12 +3,10 @@ const inputs = document.querySelectorAll('#formulario input');
 
 
 const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s\-]{1,30}$/,
     clave: /^.{4,12}$/,
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 }
 const campos = {
-    nombre: false,
     clave: false,
     correo: false
 
@@ -16,9 +14,6 @@ const campos = {
 
 const validarFormulario = (e) => {
     switch(e.target.name) {
-        case "nombre":
-            validarCampo(expresiones.nombre, e.target, 'nombre');
-        break;
         case "correo":
             validarCampo(expresiones.correo, e.target, 'correo');
         break;
@@ -58,7 +53,7 @@ formulario.addEventListener('submit' , (e) => {
     e.preventDefault();
 
 
-    if( campos.nombre && campos.correo && campos.clave ){
+    if( campos.correo && campos.clave ){
         formulario.reset();
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
